@@ -30,6 +30,18 @@ showPasswordCheckbox.addEventListener('change', function () {
         passwordInput.type = 'password';
     }
 });
+
+// script.js
+const passwordInput1 = document.getElementById('password2');
+const showPasswordCheckbox1 = document.getElementById('showPassword2');
+
+showPasswordCheckbox1.addEventListener('change', function () {
+    if (this.checked) {
+        passwordInput1.type = 'text';
+    } else {
+        passwordInput1.type = 'password';
+    }
+});
 // Example of users stored in an object (for simplicity)
 const users = {
     admin: { areaCode: "001", password: "adminpass" },
@@ -65,9 +77,9 @@ const users = {
 
   // Example of users stored in an object (for simplicity)
   const users2 = {
-    "corporate1": { corpoareaCode: "001", corpopassword: "corp1pass" },
-    "corporate2": { corpoareaCode: "002", corpopassword: "corp2pass" },
-    "corporate3": { corpoareaCode: "003", corpopassword: "corp3pass" }
+    corporate1: { corpoareaCode: "001", corpopassword: "corp1pass" },
+    corporate2: { corpoareaCode: "002", corpopassword: "corp2pass" },
+    corporate3: { corpoareaCode: "003", corpopassword: "corp3pass" }
 };
 
 // Login form submission handler
@@ -84,8 +96,8 @@ document.getElementById('corpo-loginform').addEventListener('submit', function(e
         // Validate area code and password
         if (users2[corpouserId].corpoareaCode === corpoareaCode && 
             users2[corpouserId].corpopassword === corpopassword) {
-            alert(`Logged in successfully as ${userId}!`);
-            if (userId.startsWith('corporate')) {
+            alert(`Logged in successfully as ${corpouserId}!`);
+            if (corpouserId.startsWith('corporate')) {
                 window.location.href = "corpo-dashboard.html"; // Redirect to corporate dashboard
             } else {
                 window.location.href = "admin-dashboard.html"; // Redirect to a general dashboard

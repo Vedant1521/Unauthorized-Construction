@@ -32,36 +32,36 @@ showPasswordCheckbox.addEventListener('change', function () {
 });
 // Example of users stored in an object (for simplicity)
 const users = {
-  "admin": { areaCode: "001", password: "adminpass" },
-  "user1": { areaCode: "002", password: "user1pass" },
-  "partner": { areaCode: "003", password: "partnerpass"},
-};
-
-// Login form submission handler
-  document.getElementById("adminloginForm").addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    // Getting form values
-    const areaCode = document.querySelector('input[name="area-code"]').value.trim();
-    const userId = document.querySelector('input[name="user-id"]').value.trim();
-    const password = document.querySelector('input[name="password"]').value.trim();
-
-    // Check if the user exists in the users object
-    if (users[userId]) {
-    // Validate area code and password
-      if (
-        users[userId].areaCode === areaCode &&
-        users[userId].password === password
-      ) {
-        alert(`Logged in successfully as ${userId}!`);
-        window.location.href = "admin-dashboard.html"; // Redirect to a general dashboard
+    admin: { areaCode: "001", password: "adminpass" },
+    user1: { areaCode: "002", password: "user1pass" },
+    partner: { areaCode: "003", password: "partnerpass"},
+  };
+  
+  // Login form submission handler
+    document.getElementById("adminloginForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+  
+      // Getting form values
+      const areaCode = document.querySelector('input[name="area-code"]').value.trim();
+      const userId = document.querySelector('input[name="user-id"]').value.trim();
+      const password = document.querySelector('input[name="password"]').value.trim();
+  
+      // Check if the user exists in the users object
+      if (users[userId]) {
+      // Validate area code and password
+        if (
+          users[userId].areaCode === areaCode &&
+          users[userId].password === password
+        ) {
+          alert(`Logged in successfully as ${userId}!`);
+          window.location.href = "admin-dashboard.html"; // Redirect to a general dashboard
+        } else {
+          alert("Invalid credentials! Please try again.");
+        }
       } else {
-        alert("Invalid credentials! Please try again.");
+        alert("User ID not found! Please check your credentials.");
       }
-    } else {
-      alert("User ID not found! Please check your credentials.");
-    }
-  });
+    });
 
   // Example of users stored in an object (for simplicity)
   const users2 = {
@@ -75,15 +75,15 @@ document.getElementById('corpo-loginform').addEventListener('submit', function(e
     event.preventDefault();
 
     // Getting form values
-    const areaCode = document.querySelector('input[name="area-code"]').value.trim();
-    const userId = document.querySelector('input[name="user-id"]').value.trim();
-    const password = document.querySelector('input[name="password"]').value.trim();
+    const corpoareaCode = document.querySelector('input[name="corpo-area-code"]').value.trim();
+    const corpouserId = document.querySelector('input[name="corpo-user-id"]').value.trim();
+    const corpopassword = document.querySelector('input[name="corpo-password"]').value.trim();
 
     // Check if the user exists in the users object
-    if (users2[userId]) {
+    if (users2[corpouserId]) {
         // Validate area code and password
-        if (users2[userId].areaCode === areaCode && 
-            users2[userId].password === password) {
+        if (users2[corpouserId].corpoareaCode === corpoareaCode && 
+            users2[corpouserId].corpopassword === corpopassword) {
             alert(`Logged in successfully as ${userId}!`);
             if (userId.startsWith('corporate')) {
                 window.location.href = "corpo-dashboard.html"; // Redirect to corporate dashboard

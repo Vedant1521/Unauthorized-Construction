@@ -65,9 +65,9 @@ const users = {
 
   // Example of users stored in an object (for simplicity)
   const users2 = {
-    "corporate1": { areaCode: "001", password: "corp1pass" },
-    "corporate2": { areaCode: "002", password: "corp2pass" },
-    "corporate3": { areaCode: "003", password: "corp3pass" }
+    "corporate1": { corpoareaCode: "001", corpopassword: "corp1pass" },
+    "corporate2": { corpoareaCode: "002", corpopassword: "corp2pass" },
+    "corporate3": { corpoareaCode: "003", corpopassword: "corp3pass" }
 };
 
 // Login form submission handler
@@ -97,5 +97,3 @@ document.getElementById('corpo-loginform').addEventListener('submit', function(e
         alert("User ID not found! Please check your credentials.");
     }
 });
-
-  

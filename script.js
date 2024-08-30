@@ -32,9 +32,9 @@ showPasswordCheckbox.addEventListener('change', function () {
 });
 // Example of users stored in an object (for simplicity)
 const users = {
-  admin: { areaCode: "001", password: "adminpass" },
-  user1: { areaCode: "002", password: "user1pass" },
-  partner: { areaCode: "003", password: "partnerpass"},
+  "admin": { areaCode: "001", password: "adminpass" },
+  "user1": { areaCode: "002", password: "user1pass" },
+  "partner": { areaCode: "003", password: "partnerpass"},
 };
 
 // Login form submission handler

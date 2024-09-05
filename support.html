@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support - Drone Monitoring System</title>
+    <link rel="stylesheet" href="support_style.css">
+</head>
+<body>
+    <header>
+        <h1>UrbanEyeMonitor.com</h1>
+        <nav>
+            <ul>
+                <li><a href="admin-dashboard.html">Home</a></li>
+                <li><a href="support.html" class="active">Customer Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="support-intro">
+            <h2>Customer Support</h2>
+            <p>We're here to help you with any questions or issues you may have </p>
+        </section>
+
+        <section class="support-options">
+            <div class="support-option">
+                <h3>Technical Support</h3>
+                <p>For technical assistance with our system, please contact our support team.</p>
+                <button onclick="displayContactForm('Technical Support')">Get Technical Support</button>
+            </div>
+
+            <div class="support-option">
+                <h3>Billing and Accounts</h3>
+                <p>For inquiries related to billing, accounts, or subscription plans.&nbsp&nbsp&nbsp&nbsp</p>
+                <button onclick="displayContactForm('Billing and Accounts')">Get Billing Support</button>
+            </div>
+
+            <div class="support-option">
+                <h3>General Inquiries</h3>
+                <p>If you have general questions about our services, feel free to reach out.</p>
+                <button onclick="displayContactForm('General Inquiries')">Contact Us</button>
+            </div>
+        </section>
+
+        <section id="contact-form-section" class="hidden">
+            <h3>Contact Form</h3>
+            <form id="contact-form">
+                <label for="support-type">Support Type:</label>
+                <input type="text" id="support-type" name="support-type" readonly>
+
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024&nbsp&nbsp&nbsp&nbsp UrbanEyeMonitor.com &nbsp&nbsp&nbsp&nbspAll rights reserved.</p>
+    </footer>
+
+    <script src="support_script.js"></script>
+</body>
+</html>
+

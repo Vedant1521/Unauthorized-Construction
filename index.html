@@ -2,11 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>Front View with Slider</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <nav class="navbar">
+          <div class="logo">UrbanEyeMonitor.com
+          </div>
+          <ul class="nav-links">
+              <li><a href="#home">About</a></li>
+              <li><a href="#about">Services We provide</a></li>
+              <li><a href="#services">Why to Choose Us?</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+          </ul>
+      </nav>
+  </header>
+
     <div class="theme-toggle">
       <button id="toggleTheme">Switch to Dark Mode</button>
     </div>
@@ -16,12 +32,17 @@
           <h1>LOGIN AS CORPORATE</h1>
           <input type="number" name="corpo-area-code" placeholder="Area Code" />
           <input type="text" name="corpo-user-id" placeholder="USER-ID" />
-          <input id="password" type="password" name="corpo-password" placeholder="Password" />
+          <input
+            id="password"
+            type="password"
+            name="corpo-password"
+            placeholder="Password"
+          />
           <label>
-            <input type="checkbox" id="showPassword"> Show Password
+            <input type="checkbox" id="showPassword" /> Show Password
           </label>
-        <a href="#">Forgot your password?</a>
-          <button onclick="login()">Sign IN</button>
+          <a href="#">Forgot your password?</a>
+          <button type="submit" class="btn-signin">Sign IN</button>
         </form>
       </div>
       <div class="form-container sign-in-container">
@@ -29,9 +50,14 @@
           <h1>LOGIN AS ADMIN</h1>
           <input type="number" name="area-code" placeholder="Area-Code" />
           <input type="text" name="user-id" placeholder="USER-ID" />
-          <input id="password2" type="password" name="password" placeholder="Password" />
+          <input
+            id="password2"
+            type="password"
+            name="password"
+            placeholder="Password"
+          />
           <label>
-            <input type="checkbox" id="showPassword2"> Show Password
+            <input type="checkbox" id="showPassword2" /> Show Password
           </label>
           <a href="#">Forgot your password?</a>
           <button type="submit" class="btn-signin">Sign In</button>

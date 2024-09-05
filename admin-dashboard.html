@@ -1,20 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin-Panel</title>
-</head>
-<body>
-<div class="content">
-    <h2>Login Successful!</h2>
-    <div class="authorized">
-        <p>Authorized Area: Welcome to the secure area.</p>
-    </div>
-    <div class="unauthorized">
-        <p>Unauthorized Area: Access is restricted.</p>
-    </div>
-    <button class="map-button" onclick="viewMap()">View Map</button>
-</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin-Dashboard</title>
+    <link rel="stylesheet" href="admin_style.css" />
+    
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <h1>UrbanEyeMonitor.com</h1>
+        </div>
+        <div class="nav-links">
+          <a href="#">Area-Accessibility</a>
+          <a href="faq.html">FAQs</a>
+          <a href="support.html">Customer Support</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Information Section -->
+    <section class="main-info">
+      <div class="info-container">
+        <div class="main-text">
+          <h1>ADMIN</h1>
+          <p><a href="#">This is your dashboard!</a></p>
+        </div>
+        <div class="useful-links">
+          <h3>Useful links</h3>
+          <a href="#">lorem lorem→</a>
+          <a href="#">lorem lorem lorem lorem lorem →</a>
+          <a href="#">lorem lorem lorem →</a>
+        </div>
+      </div>
+      <div class="lorem">
+        <div class="View_Map"><a href="#">VIEW MAP </a></div>
+        <div class="View_Area">
+          <a href="#">View Authorized/Unauthorized Area </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="cards-section">
+      <div class="cards-container">
+        <div class="card">
+          <h3>ALERT!</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae
+            quis minus dicta harum, necessitatibus odit itaque perferendis velit
+            repellat quasi quae consectetur. Provident, neque. Dolore alias sed
+            ea eveniet temporibus.
+          </p>
+        </div>
+        <div class="card">
+          <h3>ALERT!</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            excepturi aliquam aliquid fugit explicabo? Rerum molestiae expedita
+            dolore, dolores nam fuga ea, ex culpa temporibus provident mollitia,
+            nemo corporis corrupti?
+          </p>
+        </div>
+        <div class="card">
+          <h3>ALERT!</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+            minus eius eveniet dolorum voluptatem accusantium minima rem
+            inventore consectetur ratione, animi dolore a repudiandae recusandae
+            illo eos officiis consequatur nobis!
+          </p>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="admin_script.js"></script>
+  </body>
 </html>

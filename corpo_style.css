@@ -167,9 +167,10 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background-color: #fff1ee;
+    background-color: #f2eeff;
+    border-radius: 50px;
   }
   
   .main-text img{
@@ -188,7 +189,9 @@ body {
   
   .main-text p {
     font-size: 18px;
-    color: #666;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: rgb(10, 109, 20);
   }
   
   .useful-links h3 {
